@@ -1,0 +1,16 @@
+agent:
+  logger:
+    path: /dev/stdout
+    level: INFO #change to ERROR if you would like less messages on the console
+    # Set to `true` for the agent to tag logs
+    # with \"!AM!\" for the metrics tool.
+    # metrics: true
+  security_logger:
+    path: /dev/stdout
+    level: ERROR
+  service:
+    host: localhost
+    port: 30555
+    logger:
+      path: /dev/stdout
+      level: INFO #change to ERROR if you would like less messages on the console
